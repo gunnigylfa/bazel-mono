@@ -1,5 +1,8 @@
 package greeting
 
+import namegenerator.NameGenerator
+
 object Greeter extends App {
-  println(s"Hello world!")
+  val nameGenerator = new NameGenerator()
+  println(s"Hello ${nameGenerator.randomName()}!")
 }
